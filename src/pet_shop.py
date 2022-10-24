@@ -46,7 +46,7 @@ def get_pets_by_breed(pet_shop, breed):
             breed_pet.append(pet)
     return(breed_pet)
 
-#9
+#9, #10
 
 def find_pet_by_name(pet_shop, pet_name):
     find_name = None
@@ -55,5 +55,8 @@ def find_pet_by_name(pet_shop, pet_name):
             find_name = pet
     return(find_name)
 
-#10
+#11 ----------- Corrections start here
 
+def remove_pet_by_name(pet_shop, name):
+    pet_to_delete = find_pet_by_name(pet_shop, name)
+    pet_shop["pets"].remove(pet_to_delete)
