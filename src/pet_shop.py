@@ -55,8 +55,35 @@ def find_pet_by_name(pet_shop, pet_name):
             find_name = pet
     return(find_name)
 
-#11 ----------- Corrections start here
+#11 ----------- Corrections start here --------------
 
 def remove_pet_by_name(pet_shop, name):
     pet_to_delete = find_pet_by_name(pet_shop, name)
     pet_shop["pets"].remove(pet_to_delete)
+
+#12
+
+def add_pet_to_stock(pet_shop, pet):
+    pet_shop["pets"].append(pet)
+
+#13
+
+def get_customer_cash(customer):
+    return customer["cash"]
+
+#14
+
+def remove_customer_cash(customer, amount):
+    customer["cash"] -= amount
+
+#15
+
+def get_customer_pet_count(customer):
+    return len(customer["pets"])
+
+#16
+
+def add_pet_to_customer(customer, pet):
+    customer["pets"].append(pet)
+    
+#Extra
